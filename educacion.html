@@ -1,10 +1,104 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Orlando Betancourth CV</title>
+</head>
+<body>
+  <header>
+    <svg>
+        <image xlink:href="images/logo.svg" width="320" height="120"></image>
+    </svg>
+    <h1>Hoja de Vida</h1>
+    <h2>Datos Personales</h2>
+    <ul>
+      <li><strong>Nombres: </strong> Orlando José</li>
+      <li><strong>Apellidos: </strong> Betancourth Alvarenga</li>
+      <li><strong>Lugar de Nacimiento: </strong> Honduras</li>
+    </ul>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="educacion.html">Educación</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Datos de Educación</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Año</th>
+          <th>Institución</th>
+          <th>Lugar</th>
+          <th>¿Culminó?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2015</td>
+          <td>UNICAH</td>
+          <td>Honduras</td>
+          <td>Si</td>
+        </tr>
+        <tr>
+          <td>2005</td>
+          <td>UNICAH</td>
+          <td>Honduras</td>
+          <td>Si</td>
+        </tr>
+        <tr>
+          <td>2001</td>
+          <td>Instituto La Estancia</td>
+          <td>Honduras</td>
+          <td>Si</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Agregar Estudios</h3>
+    <form action="educacion.html" method="post">
+      <label for="intAnio">Año</label>
+      <select id="intAnio" name="intAnio">
+        <option value="2018">2018</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+        <option value="2014">2014</option>
+        <option value="2013">2013</option>
+        <option value="2012">2012</option>
+        <option value="2011">2011</option>
+        <option value="2010">2010</option>
+        <option value="2009">2009</option>
+      </select> <br />
+      <label for="txtInstitucion">Institución</label>
+      <input type="text" name="txtInstitucion" id="txtInstitucion" placeholder="Nombre del Institución" required  />
+      <br />
+      <label for="txtLugar">Lugar</label>
+      <textarea rows="2" cols="60" id="txtLugar" name="txtLugar"></textarea>
+      <br />
+      <label>¿Culminó?</label>
+      <input type="radio" name="rdbCulmina" value="Si" id="rdbCulminaSi" />
+      <label for="rdbCulminaSi">Si</label>
+      <input type="radio" name="rdbCulmina" value="No" id="rdbCulminaNo" />
+      <label for="rdbCulminaNo">No</label>
+      <br />
+      <input type="submit" name="btnEnviar" id="btnEnviar" value="Enviar"  />
+    </form>
+  </main>
+  <footer>
+    <ul>
+      <li><strong>Correo</strong> orlando.betancourth@gmail.com</li>
+      <li><strong>Teléfono</strong> +(504) 3175-7328</li>
+      <li><strong>Dirección</strong> Tegucigalpa, Honduras</li>
+      <li>
+          <strong>Redes Sociales</strong>
+          <a href="https://www.linkedin.com/in/orlando-josé-betancourth-a-97448459/">LinkedIn</a> |
+          <a href="https://twitter.com/orlando_beta">Twitter</a> |
+          <a href="https://github.com/obetancourth">Github</a> |
+          <a href="https://github.com/obetancourthunicah">Github Docente</a>
+      </li>
+    </ul>
+  </footer>
+</body>
 </html>
